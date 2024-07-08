@@ -3,11 +3,9 @@ from tkinter import ttk, messagebox
 import os
 import sys
 
-# 动态添加模块路径
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(current_dir, 'vulnerability_scanners'))
 
-# 使用相对导入
 from vulnerability_scanners.starrocks import check_starrocks
 from vulnerability_scanners.casdoor import check_casdoor
 from vulnerability_scanners.easycvr_userlist import check_easycvr_userlist
@@ -72,7 +70,6 @@ class VulnerabilityScannerApp:
         self.root = root
         self.root.title("安全攻防实验室")
 
-        # 创建一个框架来包含目标URL输入框和PoC选择框
         self.top_frame = tk.Frame(root)
         self.top_frame.pack(pady=10)
 
@@ -171,7 +168,6 @@ class VulnerabilityScannerApp:
 
         self.scan_button.config(state=tk.DISABLED)
 
-        # 调用相应的漏洞检测函数
         try:
             result = ""
             if script == "StarRocks MPP数据库未授权访问":
