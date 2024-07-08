@@ -38,3 +38,8 @@ self.script_options = [
             elif script == "New PoC":  # 新添加的检测函数调用
                 result = check_new_poc(url)
             self.result_text.insert(tk.END, result)
+
+
+仅供安全研究与学习之用，如用于其他用途，由使用者承担全部法律及连带责任，与工具作者和公众号无关。
+
+![a4b34d49a2b91b79211626a495247ae](https://github.com/idssgmcc/PleaseOneScan/assets/47582299/92abc7e3-c4f0-4fd9-bf70-2f07d6ce59e2)
