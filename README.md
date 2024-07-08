@@ -1,5 +1,5 @@
 # PleaseOneScan
-人人有饭吃，人人有扫描器
+人人有饭吃，人人有扫描器，每个安服仔都能上手改装的扫描器
 
 python3 main.py
 
@@ -19,7 +19,7 @@ python3 main.py
 2. 修改主GUI应用
 在主GUI应用中添加新的PoC选项，并调用相应的检测函数。
 
-# 使用相对导入
+<h1>使用相对导入</h1>
 from vulnerability_scanners.starrocks import check_starrocks
 
 ....
@@ -31,7 +31,7 @@ self.script_options = [
 ]
 ....
 
- # 调用相应的漏洞检测函数
+<h1>调用相应的漏洞检测函数</h1>
         try:
             result = ""
             
