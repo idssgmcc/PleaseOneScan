@@ -68,7 +68,7 @@ from vulnerability_scanners.baizhuo_smart_importexport_sqli import check_baizhuo
 class VulnerabilityScannerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("安全攻防实验室")
+        self.root.title("khan安全攻防实验室")
 
         self.top_frame = tk.Frame(root)
         self.top_frame.pack(pady=10)
