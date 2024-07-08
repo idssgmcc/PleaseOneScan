@@ -8,10 +8,10 @@ python3 main.py
 
 如果你要增加新的PoC（Proof of Concept）到你的漏洞扫描器中，你需要修改以下几个地方：
 
-创建新的PoC脚本文件：在vulnerability_scanners目录下创建新的PoC脚本文件。
-修改__init__.py文件：在vulnerability_scanners目录下的__init__.py文件中导入新的PoC函数。
-修改主GUI应用：在主GUI应用中添加新的PoC选项，并调用相应的检测函数。
-修改spec文件（如果你使用PyInstaller打包）：在spec文件中添加新的PoC模块到hiddenimports列表中。
+      创建新的PoC脚本文件：在vulnerability_scanners目录下创建新的PoC脚本文件。
+      修改__init__.py文件：在vulnerability_scanners目录下的__init__.py文件中导入新的PoC函数。
+      修改主GUI应用：在主GUI应用中添加新的PoC选项，并调用相应的检测函数。
+      修改spec文件（如果你使用PyInstaller打包）：在spec文件中添加新的PoC模块到hiddenimports列表中。
 
 1. 修改__init__.py文件
 在vulnerability_scanners目录下的__init__.py文件中导入新的PoC函数：
@@ -19,7 +19,7 @@ python3 main.py
 2. 修改主GUI应用
 在主GUI应用中添加新的PoC选项，并调用相应的检测函数。
 
-<h1>使用相对导入</h1>
+<h1>导入POC</h1>
 from vulnerability_scanners.starrocks import check_starrocks
 
 ....
